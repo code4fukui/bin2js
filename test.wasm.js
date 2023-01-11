@@ -1,4 +1,2 @@
-const s = atob("AGFzbQEAAAABBAFgAAADAgEABQMBAAEHEwIGbWVtb3J5AgAGX3N0YXJ0AAAKMgEwAQJ/QQAhAEEBIQECQANAQQEgAUHkAEhrDQEgACABaiEAIAFBAWohAQwACwsgAA8L");
-const b = new Uint8Array(s.length);
-b.forEach((_, i) => b[i] = s.charCodeAt(i));
-export default b;
+function d(n){const t=[0,10,13,34,38,92];const f=7;let o=[];let c=0;let e=0;function i(n){n<<=1;c|=n>>>e;e+=7;if(e>=8){o.push(c);e-=8;c=n<<7-e&255}}for(let r=0;r<n.length;r++){let o=n.charCodeAt(r);if(o>127){let n=o>>>8&7;if(n!=f)i(t[n]);i(o&127)}else{i(o)}}return new Uint8Array(o)};
+export default d(`.6h @@@ qm2[-wdn7#dt#\`hÁÈ @ @\$H¤aP	 ÚDAÚD0Hx,`);
