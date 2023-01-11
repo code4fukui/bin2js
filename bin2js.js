@@ -10,7 +10,6 @@ program
 //console.log(program.processedArgs);
 
 const fn = program.processedArgs[0];
-console.log(fn);
 const bin = await Deno.readFile(fn);
 const s = bin2s(bin);
 /*
