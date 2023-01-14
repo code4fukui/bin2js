@@ -52,11 +52,11 @@ export default gunzip(d(${Base122.encodeJS(gzip(bin))}))`;
   } else if (base128) {
     if (!flggzip) {
       return `import{Base128}from"https://code4fukui.github.io/Base128/Base128.js"
-export default Base128.decode(${Base128.encodeJS(bin)})`;
+export default Base128.decode("${Base128.encode(bin)}")`;
     } else {
       return `import{Base128}from"https://code4fukui.github.io/Base128/Base128.js"
 import{gunzip}from"https://taisukef.github.io/zlib.js/es/gunzip.js"
-export default gunzip(Base128.decode(${Base128.encodeJS(gzip(bin))}))`;
+export default gunzip(Base128.decode("${Base128.encode(gzip(bin))}"))`;
     }
   }
 };
