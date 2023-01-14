@@ -1,4 +1,2 @@
-const s = atob("AGFzbQEAAAABBAFgAAADAgEABQMBAAEHEwIGbWVtb3J5AgAGX3N0YXJ0AAAKMgEwAQJ/QQAhAEEBIQECQANAQQEgAUHkAEhrDQEgACABaiEAIAFBAWohAQwACwsgAA8L");
-const b = new Uint8Array(s.length);
-b.forEach((_, i) => b[i] = s.charCodeAt(i));
-export default b;
+import{Base128}from"https://code4fukui.github.io/Base128/Base128.js"
+export default Base128.decode(".6h @@@ qm2[-wdn7#dt#`hÁÈ @ @$H¤aPĀ ÚDAÚD0Hx,")
