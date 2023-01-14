@@ -51,17 +51,17 @@ nodejs-lib-ruby-parser.wasm 721KB
 $ cd example
 $ deno run -A https://code4fukui.github.io/bin2js/bin2js.js nodejs-lib-ruby-parser.wasm --gzip
 $ ls -l nodejs-lib-ruby-parser.wasm.js
-248KB
+213KB
 ```
 
-### encode by Base128
+### encode by Base64
 
 nodejs-lib-ruby-parser.wasm 721KB
 ```sh
 $ cd example
-$ deno run -A https://code4fukui.github.io/bin2js/bin2js.js nodejs-lib-ruby-parser.wasm --base128
+$ deno run -A https://code4fukui.github.io/bin2js/bin2js.js nodejs-lib-ruby-parser.wasm --base64 --gzip
 $ ls -l nodejs-lib-ruby-parser.wasm.js
-216KB
+248KB
 ```
 
 ## blog
