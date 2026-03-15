@@ -1,9 +1,7 @@
 # bin2js / js2bin
 
-- convert a binary file to a js (JavaScript source) file for WASM, images or anything!
-- reconvert a js file to a binary file (js2bin)
-
-## Usage
+- バイナリファイルをJavaScriptのソースファイルに変換できる
+- JavaScriptのソースファイルをバイナリファイルに逆変換できる (js2bin)
 
 ```sh
 $ deno run -A https://code4fukui.github.io/bin2js/bin2js.js somefile.bin
@@ -15,14 +13,14 @@ import bin from "./somefile.bin.js";
 console.log(bin);
 ```
 
-## Example
+## 例
 
-test.wasm 96byte
+test.wasm 96バイト
 ```sh
 $ cd example
 $ deno run -A https://code4fukui.github.io/bin2js/bin2js.js test.wasm
 $ ls -l test.wasm.js
-212byte
+212バイト
 ```
 
 test.wasm.js
@@ -31,22 +29,22 @@ import{Base128}from"https://code4fukui.github.io/Base128/Base128.js"
 export default Base128.decode(".6h @@@ qm2[-wdn7#dt#`hÁÈ @ @$H¤aPĀ ÚDAÚD0Hx,")
 ```
 
-to import
+インポート
 ```JavaScript
 import bin from "./test.wasm.js";
 console.log(bin); // Uint8Array(96) [0,  97, 115, 109, ...
 ```
 
-reconvert to binnary file
+バイナリファイルに戻す
 ```sh
 $ deno run -A https://code4fukui.github.io/bin2js/js2bin.js test.wasm.js
 $ ls -l test.wasm
-96byte
+96バイト
 ```
 
-## Options
+## オプション
 
-### gzip compression
+### gzipによる圧縮
 
 nodejs-lib-ruby-parser.wasm 721KB
 ```sh
@@ -56,7 +54,7 @@ $ ls -l nodejs-lib-ruby-parser.wasm.js
 213KB
 ```
 
-### encode by Base64
+### Base64でエンコード
 
 nodejs-lib-ruby-parser.wasm 721KB
 ```sh
@@ -66,5 +64,6 @@ $ ls -l nodejs-lib-ruby-parser.wasm.js
 248KB
 ```
 
-## Blog
+## ブログ
+
 - https://fukuno.jig.jp/3821
