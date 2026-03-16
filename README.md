@@ -80,7 +80,5 @@ $ deno run -A https://code4fukui.github.io/bin2js/bin2js.js nodejs-lib-ruby-pars
 $ ls -l nodejs-lib-ruby-parser.wasm.js
 ```
 
-## Blog
-
-For more information, please visit the blog post about this project:
-- https://fukuno.jig.jp/3821
+## License
+MIT License — see [LICENSE](LICENSE).
